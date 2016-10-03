@@ -86,15 +86,4 @@ describe('TagInputComponent', () => {
             expect(onClose).toHaveBeenCalled();
         });
     });
-
-    describe('Actions', () => {
-        beforeEach(() => {
-            fixture = TestBed.createComponent(TestComponent);
-            panel = getComponent(fixture, 0);
-        });
-
-        it('should have buttons', () => {
-            expect(panel.buttons).toBe(true);
-        });
-    });
 });
