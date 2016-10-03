@@ -63,9 +63,7 @@
     "webpack-merge": "^0.8.4",
     "zone.js": "0.6.23"
   },
-  "dependencies": {
-    "ng2-material-dropdown": "^0.3.6"
-  },
+  "dependencies": {},
   "keywords": [
     "angular 2",
     "angular 2 expansion panels",
@@ -80,7 +78,7 @@
     "url": "https://github.com/Gbuomprisco/ng2-expansion-panels/issues"
   },
   "homepage": "https://github.com/Gbuomprisco/ng2-expansion-panels",
-  "main": "./dist/ng2-ng2-expansion-panels.bundle.js",
+  "main": "./dist/ng2-expansion-panels.bundle.js",
   "files": [
     "dist",
     "index.ts"

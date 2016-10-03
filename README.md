@@ -1,6 +1,8 @@
-# Ng2 Expansion Panels
+# Ng2 Expansion Panels [![Build Status](https://travis-ci.org/Gbuomprisco/ng2-expansion-panels.svg?branch=master)](https://travis-ci.org/Gbuomprisco/ng2-expansion-panels)
 
 This is a component for Angular 2. Design is inspired by Material Design's component Expansion Panels.
+
+**Development is in very early stage**
 
 ## Demo
 
@@ -14,12 +16,12 @@ Sorry, not on NPM yet
 Ensure you import the module:
 
 ```javascript
-import { ExpansionPanelsModuke } from 'ng2-expansion-panels';
+import { ExpansionPanelsModule } from 'ng2-expansion-panels';
 
 // please notice this is the new way of telling a Component
 // to import another component...no more directives[]
 @NgModule({
-   imports: [ExpansionPanelsModuke]
+   imports: [ExpansionPanelsModule]
 })
 export class MyModule {}
 ```
