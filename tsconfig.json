@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "removeComments": true,
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "outDir": "dist",
+    "target": "es5",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "declaration": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "rootDir": ".",
+    "types": ["node", "es6-shim", "es6-collections", "jasmine"]
+  },
+  "awesomeTypescriptLoaderOptions": {
+    "forkChecker": true
+  },
+  "angularCompilerOptions": {
+   "genDir": "./ngfactory"
+  },
+  "files": [
+    "index.ts"
+  ],
+  "include": [
+    "modules"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "atom": { "rewriteTsconfig": false }
+}

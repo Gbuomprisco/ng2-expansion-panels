@@ -1,0 +1,30 @@
+<div class="expansion-panel" [class.expansion-panel--toggled]="isToggled">
+
+    <div class="layout-row expansion-panel__header"
+         [attr.tabindex]="0"
+         (keyup.enter)="toggle()"
+         (click)="toggle()">
+
+        <div class="expansion-panel__title layout-column">
+            <ng-content select="expansion-panel-title"></ng-content>
+        </div>
+
+        <div class="expansion-panel__description layout-column" *ngIf="isToggled">
+            <ng-content select="expansion-panel-description-toggled"></ng-content>
+        </div>
+
+        <div class="expansion-panel__description layout-column" *ngIf="isToggled === false">
+            <ng-content select="expansion-panel-description-hidden"></ng-content>
+        </div>
+
+        <div class="expansion-panel__arrow-down layout-column">
+            <span aria-label="Toggle panel"></span>
+        </div>
+    </div>
+
+    <div class="expansion-panel__content layout-row" *ngIf="isToggled" [attr.tabindex]="-1">
+        <ng-content select="expansion-panel-content"></ng-content>
+
+        <div *ngIf="buttons"></div>
+    </div>
+</div>

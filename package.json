@@ -1,0 +1,88 @@
+{
+  "name": "ng2-expansion-panels",
+  "version": "0.0.1",
+  "description": "Expansion Panels component for Angular 2",
+  "scripts": {
+    "prepublish": "npm run build && ./node_modules/.bin/tsc",
+    "build": "webpack --inline --colors --progress --display-error-details --display-cached",
+    "watch": "npm run build -- --watch",
+    "server": "webpack-dev-server --config webpack.demo.js --inline --colors --progress --display-error-details --display-cached --port 3000  --content-base demo",
+    "start": "npm run server",
+    "test": "karma start karma.conf.js"
+  },
+  "author": {
+    "name": "Giancarlo Buomprisco",
+    "email": "giancarlopsk@gmail.com"
+  },
+  "contributors": [],
+  "license": "MIT",
+  "devDependencies": {
+    "@angular/common": "2.0.0",
+    "@angular/compiler": "2.0.0",
+    "@angular/core": "2.0.0",
+    "@angular/forms": "2.0.0",
+    "@angular/http": "2.0.0",
+    "@angular/platform-browser": "2.0.0",
+    "@angular/platform-browser-dynamic": "2.0.0",
+    "@types/es6-collections": "^0.5.29",
+    "@types/es6-shim": "0.0.22-alpha",
+    "@types/jasmine": "^2.2.34",
+    "@types/node": "^6.0.39",
+    "autoprefixer": "^6.3.7",
+    "awesome-typescript-loader": "1.1.1",
+    "core-js": "^2.4.1",
+    "css-loader": "^0.23.1",
+    "es6-promise": "3.0.2",
+    "es6-shim": "0.35.0",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.3",
+    "jasmine": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.3",
+    "karma-coverage": "^1.1.0",
+    "karma-jasmine": "^0.3.8",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "1.7.0",
+    "node-sass": "^3.8.0",
+    "postcss-loader": "^0.9.1",
+    "precss": "^1.4.0",
+    "protractor": "^3.3.0",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.12",
+    "sass-loader": "^3.2.3",
+    "source-map-loader": "^0.1.5",
+    "style-loader": "^0.13.1",
+    "svg-url-loader": "^1.1.0",
+    "ts-helpers": "1.1.1",
+    "ts-node": "^0.7.3",
+    "tslint": "^3.13.0",
+    "typescript": "2.0.2",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.0",
+    "webpack-merge": "^0.8.4",
+    "zone.js": "0.6.23"
+  },
+  "dependencies": {
+    "ng2-material-dropdown": "^0.3.6"
+  },
+  "keywords": [
+    "angular 2",
+    "angular 2 expansion panels",
+    "expansion panels",
+    "material design expansion panels"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gbuomprisco/ng2-expansion-panels"
+  },
+  "bugs": {
+    "url": "https://github.com/Gbuomprisco/ng2-expansion-panels/issues"
+  },
+  "homepage": "https://github.com/Gbuomprisco/ng2-expansion-panels",
+  "main": "./dist/ng2-ng2-expansion-panels.bundle.js",
+  "files": [
+    "dist",
+    "index.ts"
+  ]
+}

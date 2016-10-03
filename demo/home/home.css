@@ -1,0 +1,13 @@
+body, h1, h2, h3 {
+  font-family: "Roboto";
+}
+
+.home-container {
+    padding: 2em;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.section {
+    margin: 1em 0;
+}
