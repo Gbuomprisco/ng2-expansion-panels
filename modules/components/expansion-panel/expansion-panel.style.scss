@@ -80,3 +80,8 @@ expansion-panel:last-child .expansion-panel:not(.expansion-panel--toggled) {
 .expansion-panel--toggled .expansion-panel__arrow-down span {
   transform: rotate(180deg);
 }
+
+.expansion-panel__buttons {
+  display: flex;
+  flex-direction: row-reverse;
+}

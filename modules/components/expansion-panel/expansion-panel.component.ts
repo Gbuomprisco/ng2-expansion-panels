@@ -1,6 +1,5 @@
 import {
     Component,
-    Input,
     Output,
     EventEmitter
 } from '@angular/core';
@@ -18,9 +17,6 @@ export class ExpansionPanelComponent {
     @Output() private onClose: EventEmitter<ExpansionPanelComponent> = new EventEmitter();
     @Output() private onCancel: EventEmitter<any> = new EventEmitter();
     @Output() private onSubmit: EventEmitter<any> = new EventEmitter();
-
-    // inputs
-    @Input() private buttons: boolean = true;
 
     constructor(private container: ExpansionPanelsContainerComponent) {}
 
@@ -43,6 +39,7 @@ export class ExpansionPanelComponent {
      * @name submit
      */
     public submit(): void {
+        this.unselect();
         this.onSubmit.emit();
     }
 
@@ -50,6 +47,7 @@ export class ExpansionPanelComponent {
      * @name cancel
      */
     public cancel(): void {
+        this.unselect();
         this.onCancel.emit();
     }
 

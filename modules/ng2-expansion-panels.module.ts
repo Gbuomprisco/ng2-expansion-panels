@@ -6,7 +6,8 @@ import {
     ExpansionPanelTitle,
     ExpansionPanelContent,
     ExpansionPanelDescriptionToggled,
-    ExpansionPanelDescriptionHidden
+    ExpansionPanelDescriptionHidden,
+    ExpansionPanelButtons
 } from './components/expansion-panel';
 
 import {
@@ -19,7 +20,8 @@ const components = [
     ExpansionPanelTitle,
     ExpansionPanelContent,
     ExpansionPanelDescriptionToggled,
-    ExpansionPanelDescriptionHidden
+    ExpansionPanelDescriptionHidden,
+    ExpansionPanelButtons
 ];
 
 @NgModule({

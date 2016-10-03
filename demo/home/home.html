@@ -3,117 +3,57 @@
         <h1>Expansion Panels</h1>
 
         <expansion-panels-container>
-            <expansion-panel>
+            <expansion-panel #panel>
                 <expansion-panel-title>
-                    Title
+                    Name
                 </expansion-panel-title>
 
                 <expansion-panel-description-hidden>
-                    Desc when hidden
+                    Type here your name
                 </expansion-panel-description-hidden>
 
                 <expansion-panel-description-toggled>
-                    Desc when toggled
+                    Type here your name
                 </expansion-panel-description-toggled>
 
                 <expansion-panel-content>
-                    Content
+                    <md-input placeholder="name" [(ngModel)]="form.name"></md-input>
                 </expansion-panel-content>
-            </expansion-panel>
 
+                <expansion-panel-buttons>
+                    <button md-button (click)="panel.cancel()">
+                        Cancel
+                    </button>
 
-            <expansion-panel>
-                <expansion-panel-title>
-                    Title
-                </expansion-panel-title>
-
-                <expansion-panel-description-hidden>
-                    Desc when hidden
-                </expansion-panel-description-hidden>
-
-                <expansion-panel-description-toggled>
-                    Desc when toggled
-                </expansion-panel-description-toggled>
-
-                <expansion-panel-content>
-                    Content
-                </expansion-panel-content>
+                    <button md-raised-button color="primary" (click)="panel.submit()">
+                        Submit
+                    </button>
+                </expansion-panel-buttons>
             </expansion-panel>
 
             <expansion-panel>
                 <expansion-panel-title>
-                    Title
+                    Hobbies
                 </expansion-panel-title>
 
                 <expansion-panel-description-hidden>
-                    Desc when hidden
+                    Enter some hobbies here
                 </expansion-panel-description-hidden>
 
                 <expansion-panel-description-toggled>
-                    Desc when toggled
+                    Enter some hobbies
                 </expansion-panel-description-toggled>
 
                 <expansion-panel-content>
-                    Content
+                    <tag-input [(ngModel)]="form.hobbies"></tag-input>
                 </expansion-panel-content>
             </expansion-panel>
         </expansion-panels-container>
 
-        <expansion-panels-container class="section">
-            <expansion-panel>
-                <expansion-panel-title>
-                    Title
-                </expansion-panel-title>
-
-                <expansion-panel-description-hidden>
-                    Desc when hidden
-                </expansion-panel-description-hidden>
-
-                <expansion-panel-description-toggled>
-                    Desc when toggled
-                </expansion-panel-description-toggled>
-
-                <expansion-panel-content>
-                    Content
-                </expansion-panel-content>
-            </expansion-panel>
-
-
-            <expansion-panel>
-                <expansion-panel-title>
-                    Title
-                </expansion-panel-title>
-
-                <expansion-panel-description-hidden>
-                    Desc when hidden
-                </expansion-panel-description-hidden>
-
-                <expansion-panel-description-toggled>
-                    Desc when toggled
-                </expansion-panel-description-toggled>
-
-                <expansion-panel-content>
-                    Content
-                </expansion-panel-content>
-            </expansion-panel>
-
-            <expansion-panel>
-                <expansion-panel-title>
-                    Title
-                </expansion-panel-title>
-
-                <expansion-panel-description-hidden>
-                    Desc when hidden
-                </expansion-panel-description-hidden>
-
-                <expansion-panel-description-toggled>
-                    Desc when toggled
-                </expansion-panel-description-toggled>
-
-                <expansion-panel-content>
-                    Content
-                </expansion-panel-content>
-            </expansion-panel>
-        </expansion-panels-container>
+        <div *ngIf="form.hobbies.length && form.name">
+            <p>
+                Your name is {{ form.name }}, and your hobbies are {{ form.hobbies }}
+            </p>
+        </div>
     </div>
 </main>

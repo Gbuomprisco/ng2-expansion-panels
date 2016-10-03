@@ -11,3 +11,6 @@ export class ExpansionPanelDescriptionHidden { }
 
 @Directive({selector: 'expansion-panel-content'})
 export class ExpansionPanelContent { }
+
+@Directive({selector: 'expansion-panel-buttons'})
+export class ExpansionPanelButtons { }
