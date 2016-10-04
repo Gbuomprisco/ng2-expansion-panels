@@ -1,6 +1,6 @@
 {
   "name": "ng2-expansion-panels",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Expansion Panels component for Angular 2",
   "scripts": {
     "prepublish": "npm run build && ./node_modules/.bin/tsc",
