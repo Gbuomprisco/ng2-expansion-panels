@@ -10,7 +10,7 @@ module.exports = {
         loaders: [
             {
                 test: /\.ts$/,
-                loader: 'awesome-typescript-loader'
+                loaders: [ 'awesome-typescript-loader', 'angular2-template-loader' ]
             },
             {
                 test: /\.png/,

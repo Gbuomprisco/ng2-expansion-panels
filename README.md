@@ -41,20 +41,20 @@ export class MyModule {}
         <expansion-panel-title>
             Title
         </expansion-panel-title>
-    
+
         <expansion-panel-description-hidden>
             Description when hidden
         </expansion-panel-description-hidden>
-    
+
         <expansion-panel-description-toggled>
             Description when toggled
         </expansion-panel-description-toggled>
-    
+
         <expansion-panel-content>
             Content
         </expansion-panel-content>
     </expansion-panel>
-    
+
     </expansion-panel>...</expansion-panel>
     </expansion-panel>...</expansion-panel>
     </expansion-panel>...</expansion-panel>
@@ -65,7 +65,7 @@ export class MyModule {}
 
 Every panel has already defined two methods, `cancel` and `submit`. In order to bind those
 to the buttons we define, we need to create a reference to the panel. In this example, I called it `#panel`
-and them I'm calling panel.cancel() and panel.submit(). 
+and them I'm calling panel.cancel() and panel.submit().
 
 It is possible to listen to these events with the outputs `onCancel` and `onSubmit`.
 
@@ -75,19 +75,19 @@ It is possible to listen to these events with the outputs `onCancel` and `onSubm
         <expansion-panel-title>
             Title
         </expansion-panel-title>
-    
+
         <expansion-panel-description-hidden>
             Description when hidden
         </expansion-panel-description-hidden>
-    
+
         <expansion-panel-description-toggled>
             Description when toggled
         </expansion-panel-description-toggled>
-    
+
         <expansion-panel-content>
             Content
         </expansion-panel-content>
-        
+
         <expansion-panel-buttons>
             <button (click)='pancel.cancel()'>Cancel</button>
             <button (click)='pancel.submit()'>Submit</button>

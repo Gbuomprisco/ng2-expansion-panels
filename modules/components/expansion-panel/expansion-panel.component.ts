@@ -8,8 +8,8 @@ import { ExpansionPanelsContainerComponent } from '../expansion-panels-container
 
 @Component({
     selector: 'expansion-panel',
-    styles: [ require('./expansion-panel.style.scss').toString() ],
-    template: require('./expansion-panel.template.html')
+    styleUrls: [ './expansion-panel.style.scss' ],
+    templateUrl: './expansion-panel.template.html'
 })
 export class ExpansionPanelComponent {
     // outputs
