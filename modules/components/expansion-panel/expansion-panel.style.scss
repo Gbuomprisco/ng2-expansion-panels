@@ -20,6 +20,7 @@ $padding: 14px 18px;
   font-size: inherit;
   line-height: 1.5;
   background: #fff;
+  font-family: 'Roboto', "Helvetica Neue", sans-serif;
 }
 
 .expansion-panel__header {
@@ -70,14 +71,13 @@ expansion-panel:last-child .expansion-panel:not(.expansion-panel--toggled) {
   align-items: flex-end;
 }
 
-.expansion-panel__arrow-down span {
-  background: url('./arrow_down.svg');
+.expansion-panel__arrow-down svg {
   transition: transform 0.2s;
   width: 24px;
   height: 24px;
 }
 
-.expansion-panel--toggled .expansion-panel__arrow-down span {
+.expansion-panel--toggled .expansion-panel__arrow-down svg {
   transform: rotate(180deg);
 }
 

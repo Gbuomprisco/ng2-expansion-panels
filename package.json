@@ -1,13 +1,13 @@
 {
   "name": "ng2-expansion-panels",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Expansion Panels component for Angular 2",
   "scripts": {
     "prepublish": "npm run build && ./node_modules/.bin/tsc",
     "build": "npm run webpack && tsc -p tsconfig.json && npm run moveassets && npm run ngc",
     "webpack": "webpack --inline --colors --progress --display-error-details --display-cached",
     "watch": "npm run build -- --watch",
-    "server": "webpack-dev-server --config webpack.demo.js --inline --colors --progress --display-error-details --display-cached --port 3000  --content-base demo",
+    "server": "webpack-dev-server --config webpack.demo.js --inline --colors --progress --display-error-details --display-cached --port 4000  --content-base demo",
     "start": "npm run server",
     "test": "karma start karma.conf.js",
     "ngc": "ngc -p ./tsconfig.json",
