@@ -1,14 +1,17 @@
 {
   "name": "ng2-expansion-panels",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Expansion Panels component for Angular 2",
   "scripts": {
     "prepublish": "npm run build && ./node_modules/.bin/tsc",
-    "build": "webpack --inline --colors --progress --display-error-details --display-cached",
+    "build": "npm run webpack && tsc -p tsconfig.json && npm run moveassets && npm run ngc",
+    "webpack": "webpack --inline --colors --progress --display-error-details --display-cached",
     "watch": "npm run build -- --watch",
     "server": "webpack-dev-server --config webpack.demo.js --inline --colors --progress --display-error-details --display-cached --port 3000  --content-base demo",
     "start": "npm run server",
-    "test": "karma start karma.conf.js"
+    "test": "karma start karma.conf.js",
+    "ngc": "ngc -p ./tsconfig.json",
+    "moveassets": "rsync -a --include='*.scss' --include='*.html' --include='*.metadata.json' --include='*/' --exclude='*' modules/ dist/modules"
   },
   "author": {
     "name": "Giancarlo Buomprisco",
@@ -17,13 +20,14 @@
   "contributors": [],
   "license": "MIT",
   "devDependencies": {
-    "@angular/common": "2.4.9",
-    "@angular/compiler": "2.4.9",
-    "@angular/core": "2.4.9",
-    "@angular/forms": "2.4.9",
+    "@angular/common": "2.4.10",
+    "@angular/compiler": "2.4.10",
+    "@angular/compiler-cli": "2.4.10",
+    "@angular/core": "2.4.10",
+    "@angular/forms": "2.4.10",
     "@angular/material": "^2.0.0-alpha.9-3",
-    "@angular/platform-browser": "2.4.9",
-    "@angular/platform-browser-dynamic": "2.4.9",
+    "@angular/platform-browser": "2.4.10",
+    "@angular/platform-browser-dynamic": "2.4.10",
     "@angular2-material/button": "^2.0.0-alpha.8-2",
     "@angular2-material/core": "^2.0.0-alpha.8-2",
     "@types/es6-collections": "^0.5.29",
@@ -85,7 +89,6 @@
   "homepage": "https://github.com/Gbuomprisco/ng2-expansion-panels",
   "main": "./dist/ng2-expansion-panels.bundle.js",
   "files": [
-    "dist",
-    "index.ts"
+    "dist"
   ]
 }

@@ -2,13 +2,17 @@
   "compilerOptions": {
     "removeComments": true,
     "noImplicitAny": false,
+    "noEmitOnError": true,
     "module": "commonjs",
     "outDir": "dist",
     "target": "es5",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "stripInternal": true,
     "declaration": true,
     "sourceMap": true,
+    "inlineSources": true,
+    "skipLibCheck": true,
     "moduleResolution": "node",
     "rootDir": ".",
     "types": ["node", "es6-shim", "es6-collections", "jasmine"]
@@ -17,16 +21,17 @@
     "forkChecker": true
   },
   "angularCompilerOptions": {
-   "genDir": "./ngfactory"
+    "genDir": "./ngfactory",
+    "strictMetadataEmit": true
   },
-  "files": [
-    "index.ts"
-  ],
   "include": [
     "modules"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "dist",
+    "**/*-ngfactory.ts",
+    "**/*.spec.ts"
   ],
   "compileOnSave": false,
   "buildOnSave": false,

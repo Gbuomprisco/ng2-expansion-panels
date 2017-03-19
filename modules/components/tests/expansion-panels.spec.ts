@@ -10,7 +10,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import {
     TestModule,
     TestComponent
-} from './testing-helpers';
+} from './testing-helpers.spec';
 
 import { ExpansionPanelComponent } from '../expansion-panel';
 
