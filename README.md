@@ -5,7 +5,7 @@ This is a component for Angular 2. Design is inspired by Material Design's compo
 **Development is in very early stage**
 
 ## Demo
-Check out the live demo (with source code) here [http://www.webpackbin.com/EJOlX3j6Z](http://www.webpackbin.com/EJOlX3j6Z).
+Check out the live demo (with source code) here [http://www.buompris.co/ng2-expansion-panels](http://www.buompris.co/ng2-expansion-panels).
 
 ## Installing
 
